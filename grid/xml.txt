@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:columnCount="4" >
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"
+            android:hint="type here">
+
+        </EditText>
+    </GridLayout>
+    <Space
+        android:layout_height="10dp"
+        android:layout_width="match_parent">
+
+    </Space>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        >
+        <Button
+            android:text="1"
+            android:id="@+id/b1">
+        </Button>
+        <Button
+            android:text="2"
+            android:id="@+id/b2">
+        </Button>
+        <Button
+            android:text="3"
+            android:id="@+id/b3">
+        </Button>
+        <Button
+            android:text="+"
+            android:id="@+id/badd">
+        </Button>
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        >
+        <Button
+            android:text="4"
+            android:id="@+id/b4">
+        </Button>
+        <Button
+            android:text="5"
+            android:id="@+id/b5">
+        </Button>
+        <Button
+            android:text="6"
+            android:id="@+id/b6">
+        </Button>
+        <Button
+            android:text="-"
+            android:id="@+id/bsub">
+        </Button>
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        >
+        <Button
+            android:text="7"
+            android:id="@+id/b7">
+        </Button>
+        <Button
+            android:text="8"
+            android:id="@+id/b8">
+        </Button>
+        <Button
+            android:text="9"
+            android:id="@+id/b9">
+        </Button>
+        <Button
+            android:text="*"
+            android:id="@+id/bmul">
+        </Button>
+
+    </GridLayout>
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        >
+        <Button
+            android:text="0"
+            android:id="@+id/b0">
+        </Button>
+        <Button
+            android:text="/"
+            android:id="@+id/bdiv">
+        </Button>
+        <Button
+            android:text="="
+            android:id="@+id/beq">
+        </Button>
+        <Button
+            android:text="CLR"
+            android:id="@+id/bclr">
+        </Button>
+
+    </GridLayout>
+</GridLayout>
