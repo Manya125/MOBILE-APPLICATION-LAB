@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="470dp"
+        android:id="@+id/r1">
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.012"
+            app:srcCompat="@drawable/f2" />
+
+        <EditText
+            android:id="@+id/ph"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="388dp"
+            android:hint="Phone or email" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="351dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="400dp"
+            android:hint="Password" />
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/img"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="165dp"
+            android:backgroundTint="#CB1E60E4"
+            android:onClick="login"
+            android:text="Log In"
+            android:textAllCaps="false"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/r2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/r1">
+
+        <TextView
+            android:id="@+id/frgt"
+            android:layout_width="match_parent"
+            android:contextClickable="true"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_height="31dp"
+            android:textColor="#CB1E60E4"
+            android:text="Forgot Password?" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/r2"
+        android:id="@+id/l1">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#E7E7E7"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:text="OR"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:background="#E7E7E7"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/l1">
+
+        <Button
+            android:id="@+id/newac"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="70dp"
+            android:layout_marginTop="30dp"
+            android:onClick="create"
+            android:backgroundTint="#059533"
+            android:text="Create new Facebook account" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
